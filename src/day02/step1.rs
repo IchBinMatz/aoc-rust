@@ -1,9 +1,9 @@
 use std::str::FromStr;
 
-struct Box {
-    l: u32,
-    w: u32,
-    h: u32,
+pub struct Box {
+    pub l: u32,
+    pub w: u32,
+    pub h: u32,
 }
 
 impl FromStr for Box {
