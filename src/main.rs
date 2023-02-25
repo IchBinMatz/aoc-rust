@@ -6,12 +6,12 @@ mod day02;
 mod day03;
 mod day04;
 mod day05;
+mod day06;
 
 fn main() {
     dotenv().ok();
     println!("Hello, world!");
 
-    // Day 1 Puzzle
     // let day01_input = fs::read_to_string("input/201501.txt").unwrap();
     // println!("step1: {}", day01::step1::parse_floor(day01_input.as_str()));
     // println!("step2: {}", day01::step2::parse_floor(day01_input.as_str()));
@@ -44,13 +44,22 @@ fn main() {
     //     "day 04 - step 2: {}",
     //     day04::step2::mine_advent_coin_hash(day04_input.as_str())
     // );
-    let day05_input = fs::read_to_string("input/201505.txt").unwrap();
+    // let day05_input = fs::read_to_string("input/201505.txt").unwrap();
+    // println!(
+    //     "day 05 - step1: {}",
+    //     day05::step1::help_santa(&day05_input)
+    // );
+    // println!(
+    //     "day 05 - step2: {}",
+    //     day05::step2::help_santa(&day05_input)
+    // );
+    let day06_input = fs::read_to_string("input/201506.txt").unwrap();
     println!(
-        "day 05 - step1: {}",
-        day05::step1::help_santa(&day05_input)
+        "day 06 - step1: {}",
+        day06::step1::count_lights(&day06_input)
     );
     println!(
-        "day 05 - step2: {}",
-        day05::step2::help_santa(&day05_input)
+        "day 06 - step2: {}",
+        day06::step2::count_lights(&day06_input)
     );
 }
