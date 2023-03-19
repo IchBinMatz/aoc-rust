@@ -7,6 +7,7 @@ mod day03;
 mod day04;
 mod day05;
 mod day06;
+mod day07;
 
 fn main() {
     dotenv().ok();
@@ -53,13 +54,19 @@ fn main() {
     //     "day 05 - step2: {}",
     //     day05::step2::help_santa(&day05_input)
     // );
-    let day06_input = fs::read_to_string("input/201506.txt").unwrap();
+    // let day06_input = fs::read_to_string("input/201506.txt").unwrap();
+    // println!(
+    //     "day 06 - step1: {}",
+    //     day06::step1::count_lights(&day06_input)
+    // );
+    // println!(
+    //     "day 06 - step2: {}",
+    //     day06::step2::count_lights(&day06_input)
+    // );
+    let day07_input = fs::read_to_string("input/201507.txt").unwrap();
+    let day07_result = day07::step1::simulate_circuit(&day07_input);
     println!(
         "day 06 - step1: {}",
-        day06::step1::count_lights(&day06_input)
-    );
-    println!(
-        "day 06 - step2: {}",
-        day06::step2::count_lights(&day06_input)
-    );
+        day07_result.get("a").expect("could not find key")
+    )
 }
